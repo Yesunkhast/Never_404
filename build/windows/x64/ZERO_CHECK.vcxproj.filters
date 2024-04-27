@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\esonk\OneDrive\Desktop\Hackton\DevHckton\not_found_404\build\windows\x64\CMakeFiles\feb01e8917929635aed4338c524038c6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{29DCC344-A268-3659-B43E-7A6F5472948D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

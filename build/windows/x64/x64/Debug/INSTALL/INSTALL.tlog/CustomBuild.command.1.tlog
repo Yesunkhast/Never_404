@@ -1,0 +1,10 @@
+^C:\USERS\ESONK\ONEDRIVE\DESKTOP\HACKTON\DEVHCKTON\NOT_FOUND_404\BUILD\WINDOWS\X64\CMAKEFILES\FEB01E8917929635AED4338C524038C6\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
