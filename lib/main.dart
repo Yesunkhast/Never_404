@@ -9,11 +9,11 @@ void main() async {
   //   options: DefaultFirebaseOptions.currentPlatform,
   // );
   // await Firebase.initializeApp();
-  runApp(const LimeApp());
+  runApp(const EmergencyApp());
 }
 
-class LimeApp extends StatelessWidget {
-  const LimeApp({super.key});
+class EmergencyApp extends StatelessWidget {
+  const EmergencyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
