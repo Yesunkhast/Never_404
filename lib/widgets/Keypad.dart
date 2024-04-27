@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:not_found_404/widgets/Calling.dart';
+// import 'package:record/record.dart';
+// import 'package:audioplayers/audioplayers.dart';
 
 class PhoneKeypad extends StatefulWidget {
   const PhoneKeypad({super.key});
@@ -9,7 +12,25 @@ class PhoneKeypad extends StatefulWidget {
 }
 
 class _PhoneKeypadState extends State<PhoneKeypad> {
+  // late AudioRecorder audioRecord;
+  // late AudioPlayer audioPlayer;
+  // bool isRecording = false;
+  // String audioPath = '';
   String dialedNumbers = '';
+
+  @override
+  // void initState() {
+  //   audioPlayer = AudioPlayer();
+  //   audioRecord = AudioRecorder();
+  //   super.initState();
+  // }
+
+  // @override
+  // void dispose() {
+  //   audioRecord.dispose();
+  //   audioPlayer.dispose();
+  //   super.dispose();
+  // }
 
   void _handleKeyPress(String key) {
     setState(() {
@@ -26,11 +47,31 @@ class _PhoneKeypadState extends State<PhoneKeypad> {
     }
   }
 
-  void _callNumber() {
-    // ignore: avoid_print
-    print('Calling: $dialedNumbers');
-    // Add your call logic here
-  }
+  // Future<void> _callNumber() async {
+  //   try {
+  //     if (await audioRecord.hasPermission()) {
+  //       await audioRecord.start(const RecordConfig(), path: audioPath);
+  //       setState(() {
+  //         isRecording = true;
+  //       });
+  //     }
+  //     print(dialedNumbers);
+  //   } catch (e) {
+  //     print("Error Start Recording : $e");
+  //   }
+  // }
+
+  // Future<void> stopRecorDing() async {
+  //   try {
+  //     String? path = await audioRecord.stop();
+  //     setState(() {
+  //       isRecording = false;
+  //       audioPath = path!;
+  //     });
+  //   } catch (e) {
+  //     print("Error Stop Recording : $e");
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +159,13 @@ class _PhoneKeypadState extends State<PhoneKeypad> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: _callNumber,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Calling()),
+                    );
+                    // _callNumber;
+                  },
                   // ignore: sort_child_properties_last
                   child: const Icon(
                     Icons.call,

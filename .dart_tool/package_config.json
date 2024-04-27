@@ -62,6 +62,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "google_nav_bar",
+      "rootUri": "file:///C:/Users/esonk/AppData/Local/Pub/Cache/hosted/pub.dev/google_nav_bar-5.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "leak_tracker",
       "rootUri": "file:///C:/Users/esonk/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.0",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-04-27T08:31:52.357456Z",
+  "generated": "2024-04-27T18:24:16.906265Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
